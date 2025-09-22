@@ -25,13 +25,18 @@
       { text: 'Nice Nice Nice!', id: 542328 }
     ];
 
+    // return person age
+    let getAge = (personObj) => (new Date()).getFullYear() - personObj.year
     // Some and Every Checks
     // Array.prototype.some() // is at least one person 19 or older?
+    console.log(people.some((it) => getAge(it) >= 19))  // true
     // Array.prototype.every() // is everyone 19 or older?
+    console.log(people.every((it) => getAge(it) >= 19)) // false
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
     // find the comment with the ID of 823423
+    
 
     // Array.prototype.findIndex()
     // Find the comment with this ID
