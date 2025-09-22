@@ -77,8 +77,8 @@
     // create empty object & properties for each string & cumulative count
     console.table(
       data.reduce((obj, it) => {
-          if (obj[it] == undefined) { obj[it] = 0 }
-          else { obj[it]++ }
+          if (!obj[it]) { obj[it] = 0 }
+          obj[it]++
           return obj
       }, {})
     )
