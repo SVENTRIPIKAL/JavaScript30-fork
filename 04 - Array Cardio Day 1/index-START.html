@@ -68,7 +68,8 @@
     console.table(deNames)
 
     // 7. sort Exercise
-    // Sort the people alphabetically by last name
+    // Sort the people alphabetically by last name  [ascending]
+    console.table(people.sort((a,b) => a > b ? 1 : -1))
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
