@@ -74,6 +74,14 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    // create empty object & properties for each string & cumulative count
+    console.table(
+      data.reduce((obj, it) => {
+          if (obj[it] == undefined) { obj[it] = 0 }
+          else { obj[it]++ }
+          return obj
+      }, {})
+    )
 
   </script>
 </body>
